@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html {
+  scroll-behavior: smooth;
+
+
+}
+
+
+
+
+
+/*Nav Bar*/
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+
+
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 1.25rem 0rem;
+
+}
+
+.navbar ul li {
+
+  font-family: 'Roboto', sans-serif;
+  font: 1.1rem;
+  font-weight: bold;
+
+}
+
+.navbar ul li a {
+
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1.563rem;
+  transition: all .5s ease;
+  BORDER-RADIUS: 0.625rem;
+  margin: 0.625rem;
+
+}
+
+.navbar ul li a:hover {
+
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 0.625rem rgb(255, 255, 255);
+  BORDER-RADIUS: 0.625rem;
+
+}
+
+/* Home section */
+#home {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 47.5rem;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 1.25rem;
+
+}
+
+#home::before {
+
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(./../images/ans.jpg) no-repeat center center/cover;
+
+  height: 109%;
+  width: 100%;
+  z-index: -1;
+  opacity: .95;
+
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  /*border: 1px solid white*/
+  align-items: center;
+  position: absolute;
+  top: 40%;
+  right: 50%;
+
+}
+
+.headings {
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  margin: 0.625rem 0rem;
+  padding: 3.75rem 0.125rem 1.813rem 0.125rem;
+}
+
+.i_am {
+  margin-bottom: 0.5633rem;
+}
+
+.btn {
+  font-family: 'Roboto', sans-serif;
+  padding: 0.625rem 2.188rem;
+  background-color: transparent;
+  border: 0.063rem solid white;
+  color: white;
+  outline: none;
+  transition: .6s ease;
+  font-size: 1rem;
+
+}
+
+
+/* About section*/
+#about {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 1.875rem;
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+
+  margin-bottom: 3.125rem;
+  margin-top: 3.125rem;
+}
+
+#pic {
+  display: flex;
+}
+
+#pic img {
+  width: 74.75rem;
+  height: 34.375rem;
+}
+
+#intro {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 1.25rem;
+  margin-top: -1.483rem;
+  margin-bottom: 3.125rem;
+}
+
+#intro h2 {
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
+}
+
+/*My Work Section*/
+#my {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  margin-top: 3.125rem;
+  margin-bottom: 3.125rem;
+
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-sizing: border-box;
+
+
+}
+
+
+.gallery img {  /* no point*/
+  max-width:  33%;
+  max-height:30.625rem;
+  margin: 1.25rem;
+
+}
+.gallery img:hover { 
+  transform: scale(1.1);
+  z-index: 2;
+  transition: 1s;
+
+}
+
+
+
+/* #jaan {
+  width: 415px;
+  height: 545px;
+} 
+
+#night {
+  width: 415px;
+  height: 545px;
+
+}
+
+#day {
+  width: 504px;
+  height: 377px;
+  margin-top: 110px;*/
+
+
+  /* padding: 252px 2px 2px 2px; */
+/*}*/
+
+ 
+/*
+#jaan:hover {
+  transform: scale(1.1);
+  z-index: 2;
+  transition: 1s;
+}
+
+#night:hover {
+  transform: scale(1.1);
+  z-index: 2;
+  transition: 1s;
+
+}
+
+#day:hover {
+  transform: scale(1.1);
+  z-index: 2;
+  transition: 1s;
+
+}
+*/
+
+/* Contact */
+#contact {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 6.375rem;
+  padding-top: 0rem;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  margin: 2.5rem 0rem;
+
+}
+
+.input {
+
+  padding: 0.75rem;
+  margin: 0.938rem;
+  width: 100%;
+  border: none;
+  outline: none;
+
+}
+
+#msg {
+  width: 80%;
+  padding: 0.625rem;
+  margin: 0.98rem;
+  border: none;
+  outline: none;
+
+}
+
+#send {
+  padding: 0.625rem;
+  width: 50%;
+  margin: 0.25rem;
+  border: none;
+  outline: none;
+
+}
+
+#send:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0.625rem white;
+
+}
+
+.half_line{
+  margin: 0.625rem 10.938rem 0.625rem 10.938rem;
+
+  border-top: 0.063rem solid white;
+
+}
+
+@media only screen and (max-width: 62.375rem) {
+  #day {
+    margin-top: 0.938rem !important;
+  }
+}

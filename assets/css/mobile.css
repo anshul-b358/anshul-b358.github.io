@@ -1,0 +1,49 @@
+#home{
+
+
+    height: 793px !important;
+}
+.gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.galleryitem{
+    max-height: none;
+}
+.headings{
+
+    font-size: 1.7rem;
+}
+ #pic img{
+
+    width: 200px;
+    height: 300px;
+ }
+ #intro h2{
+font-size: 1.5rem;
+
+
+ }
+
+.input{
+width: 70%;
+
+}
+#msg{
+
+width: 50%;
+
+}
+#send{
+
+width: 40%;
+
+}
+
+.half_line{
+
+width: 30%;
+
+}
